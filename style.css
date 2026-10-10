@@ -1,0 +1,575 @@
+/*
+Theme Name: Very Basic Theme
+Theme URI: http://meadpoint.net
+Description: This is a stripped down theme to the simplest possible form. Uses HTML5.
+Version: 2.1
+Author: William Mead
+Author URI: http://meadpoint.net/
+*/
+/* CSS Document */
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding-bottom: 0px;
+}
+html, body {
+	margin: 0;
+    padding: 0;
+	font-family: 'Wellfleet', monospace;
+    font-size: 1em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+html {
+    box-sizing: border-box;
+    background-image: url("https://content.owo.art/assets/backgroundStars.gif");
+}
+/* This asset is 100% my own */
+#container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+a:link, a:visited {
+	color:#DDD9D9;
+	text-decoration: none;
+}
+a:hover, a:active {
+    color: #F2CA80;
+    text-decoration: none;
+}
+
+li.active a {
+	color: #F2CA80;
+}
+
+.catboxContent h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+.catboxContent h1 {
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 35px;
+    color: #FFFFFF;
+    font-size: 3em;
+}
+
+#indexBackGroundImages {
+    background-image: url("https://content.owo.art/assets/spaceCat.png"), url("https://content.owo.art/assets/earth.png");
+    background-repeat: no-repeat;
+    background-position: left 80px,right 0px;
+    height: 100%;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 100px;
+}
+/* This asset is 100% my own */
+#topNavHome {
+    color: #FFFFFF;
+    width: 960px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 35px;
+    padding-top: 10px;
+}
+#topNavHome img {
+    font-size: medium;
+}
+
+#topNavHome h1 {
+    margin-bottom: 50px;
+    margin-top: -76px;
+    margin-left: 120px;
+    font-size: 1.8em;
+}
+
+#topNavHome ul  {
+    padding-top: 0px;
+    padding-right: 0px;
+    list-style-type: none;
+    text-align: right;
+    margin-top: -80px;
+    margin-right: 50px;
+}
+
+#topNavHome ul li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.6em;
+}
+#topNav {
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+	width: 960px;
+    padding-bottom: 35px;
+    padding-top: 10px;
+}
+
+#topNav img {
+}
+
+#topNav h1 {
+    margin-bottom: 50px;
+    margin-top: -76px;
+    margin-left: 130px;
+    font-size: 1.8em;
+}
+
+#topNav ul  {
+    padding-top: 0px;
+    padding-right: 0px;
+    list-style-type: none;
+    text-align: right;
+    margin-top: -80px;
+    margin-right: 50px;
+}
+
+#topNav ul li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.6em;
+}
+.wpcf7
+{
+    background-color: #161145;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    color: #DCD3DE;
+    margin-bottom: 20px;
+}
+.wpcf7 input{
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #ffffff;
+}
+#homeNav {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    color: #DCD3DE;
+    text-align: center;
+    background-image: url(https://content.owo.art/assets/logoFooter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 25px
+    margin-top: auto;
+}
+/* This asset is 100% my own */
+#homeText {
+    text-align: center;
+    color: #DCD3DE;
+    font-size: 1.1em;
+    margin-bottom: 150px;
+}
+#homeText h1 {
+    font-size: 5em;
+}
+
+
+#homeText p {
+    font-size: 1.4em;
+    margin-top: -60px;
+}
+.artBox {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    color: #DCD3DE;
+}
+
+.art {
+    flex-basis: 28%;
+}
+.art img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #DDD9D9;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.40);
+    box-shadow: 0px 0px 10px #000000;
+}
+.art h2 {
+    font-size: 1.9em;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+.art p {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+.shopBox {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    width: 960px;
+}
+#shopTitle {
+    text-align: center;
+    font-size: 1.8em;
+    padding-bottom: 60px;
+}
+.item {
+    flex-basis: 28%;
+    margin-bottom: -30px;
+}
+
+.item h2 {
+    font-size: 1.8em;
+    text-align: center;
+}
+.item p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: -15px;
+}
+footer ul li {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-top: 100px;
+}
+footer ul  {
+    padding-right: 0px;
+    list-style-type: none;
+    padding-left: 0px;
+    padding-top: 10px;
+}
+#artTitle {
+    font-family: 'Wellfleet', monospace;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+
+
+
+/*
+/////////
+Global
+/////////
+*/
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Buttons*/
+.btn {
+    color: #FFFFFF;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 125px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.cart {
+	background-color: #191633;
+}
+.learnMore {
+    background-color: #F2CA80;
+    color: #FFFFFF;
+    font-family: 'Peralta', serif;
+    ;
+    ;
+}
+.cart:hover {
+	background-color: #27234A;
+}
+/*PopUp Windows*/
+.catbox {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    padding-top: 125px;
+}
+.catbox:target {
+	visibility: visible;
+	opacity: 1;
+}
+.box-close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    text-decoration: none;
+    font-size: 60px;
+}
+.catboxContent {
+    position: absolute;
+    background: #3B3A3A;
+    width: 960px;
+    border: 5px solid #DCD3DE;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+} 
+.catboxContent p {
+    font-size: 1.2en
+'
+';
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 1.2em;
+    color: #FFFFFF;
+}
+.catboxContent img {
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 0px 10px #000000;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+
+/*Image Hover*/
+.imageTransistion {
+	position: relative;
+}
+.imageTransistion:hover .imageOverlay {
+	opacity: 1;
+}
+.imageHover {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.imageInside {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.imageOverlay {
+	position: absolute; 
+	bottom: 0; 
+	width: 100%;
+	transition: .5s ease;
+	opacity:0;
+}
+
+/*
+/////
+Shop Section
+/////
+*/
+
+.shopItemImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #3B3A3A;
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.40);
+}
+.homeLearnMore {
+    margin-top: 60px;
+
+
+}
+#mainHome {
+    margin-top: 125px;
+}
+#ourCharacters {
+    background-color: #756FAB;
+    margin-top: -55px;
+    padding-top: 0px;
+}
+#aboutUs {
+    background-color: #161145;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+#aboutUsContent {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+#aboutUsContent h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 3.5em;
+}
+#aboutUsContent p {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+
+#ourCharactersContent {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 75px;
+}
+#ourCharactersContent img {
+    border-radius: 659px;
+    border: 10px solid #DDD9D9;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.40);
+    box-shadow: 0 0 10px rgba(0,0,0,0.40);
+    margin-bottom: 150px;
+}
+#ourCharactersContent h1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 3.5em;
+    /* [disabled]border-bottom: 5px solid rgba(209,187,241,1.00); */
+    padding-bottom: 5px;
+    margin-bottom: 100px;
+}
+#ourCharactersContent h2 {
+    color: #FFFFFF;
+    font-size: 2em;
+}
+#ourCharactersContent p {
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+#homeFooter {
+    background-color: #070333;
+    margin-top: -20px;
+    margin-bottom: -15px;
+    padding-bottom: 1px;
+    padding-top: 20px;
+}
+
+.characterInfo {
+    display: block;
+    margin-left: 350px;
+    margin-top: -375px;
+    margin-bottom: 150px;
+
+}
+#comments{
+    margin-top: 20px;
+    border-top: 5px solid #FFFFFF;
+}
+#headerOther {
+    background-color: #736DA8;
+}
+.wordPress-artBox-blog {
+    margin: 50px;
+}
+.wordPress-artBox-blog a {
+    color: #F2CA80;
+}
+.blog-post-box {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    color: #DCD3DE;
+}
+#galleryTitle {
+    margin-top: 0px;
+    padding-top: 30px;
+    text-align: center;
+    border-bottom: 5px solid #FFFFFF;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#galleryTitle h1 {
+    color: #FFFFFF;
+    font-size: 4em;
+}
+#galleryTitle p {
+    color: #FFFFFF;
+    font-size: 1.5em;
+    margin-top: -35px;
+}
+#commisions {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border: 5px solid rgba(242,202,128,1.00);
+    padding-bottom: 30px;
+    background-color: #282533;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.40);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.40);
+}
+#commisions h1 {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 2em;
+    margin-left: 30px;
+}
+#commisions p {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 1em;
+    margin-left: 30px;
+}
+#otherContent {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#commisions a {
+    color: #FFFFFF;
+}
+#commisions a:hover  {
+    color: #F2CA80;
+}
+#shopDisclaimer {
+    color: #FFFFFF;
+    text-align: center;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #282533;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.40);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.40);
+    border: 5px solid rgba(242,202,128,1.00);
+}
